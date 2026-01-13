@@ -1,4 +1,4 @@
-# @shadcn-uikit/demo
+# @acronis-platform/shadcn-uikit-demo
 
 Interactive demo application showcasing the shadcn-uikit components and color schemes.
 

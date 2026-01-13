@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Button, Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter, Input } from '@shadcn-uikit/ui'
+import { Button, Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter, Input } from '@acronis-platform/shadcn-uikit'
 import { themes, type Theme } from './themes'
 import './index.css'
 
@@ -93,7 +93,7 @@ function App() {
                   id="name"
                   placeholder="Enter your name"
                   value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, name: e.target.value })}
                 />
               </div>
               <div className="space-y-2">
@@ -105,7 +105,7 @@ function App() {
                   type="email"
                   placeholder="Enter your email"
                   value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, email: e.target.value })}
                 />
               </div>
             </CardContent>

@@ -1,5 +1,5 @@
 {
-  "name": "@shadcn-uikit/ui",
+  "name": "@acronis-platform/shadcn-uikit",
   "version": "0.1.0",
   "description": "Custom shadcn UI components library",
   "main": "./dist/index.js",

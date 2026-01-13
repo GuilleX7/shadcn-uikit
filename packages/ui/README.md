@@ -1,4 +1,4 @@
-# @shadcn-uikit/ui
+# @acronis-platform/shadcn-uikit
 
 Custom shadcn UI components library with multiple color schemes.
 
@@ -13,13 +13,13 @@ This package includes the following components:
 ## Installation
 
 ```bash
-npm install @shadcn-uikit/ui
+npm install @acronis-platform/shadcn-uikit
 ```
 
 ## Usage
 
 ```tsx
-import { Button, Card, CardHeader, CardTitle, CardContent, Input } from '@shadcn-uikit/ui';
+import { Button, Card, CardHeader, CardTitle, CardContent, Input } from '@acronis-platform/shadcn-uikit';
 
 function App() {
   return (

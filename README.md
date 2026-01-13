@@ -6,7 +6,7 @@ A monorepo containing custom shadcn UI components, multiple color schemes, and i
 
 This monorepo contains the following packages:
 
-### [@shadcn-uikit/ui](./packages/ui)
+### [@acronis-platform/shadcn-uikit](./packages/ui)
 The core UI component library built on top of shadcn/ui principles.
 
 **Components:**
@@ -14,7 +14,7 @@ The core UI component library built on top of shadcn/ui principles.
 - Card (with Header, Title, Description, Content, Footer)
 - Input (styled form inputs)
 
-### [@shadcn-uikit/demo](./packages/demo)
+### [@acronis-platform/shadcn-uikit-demo](./packages/demo)
 Interactive demo application showcasing all components with multiple color schemes.
 
 **Features:**
@@ -72,13 +72,13 @@ All themes are fully customizable through CSS variables.
 ### Installing the UI Package
 
 ```bash
-npm install @shadcn-uikit/ui
+npm install @acronis-platform/shadcn-uikit
 ```
 
 ### Using Components
 
 ```tsx
-import { Button, Card, CardHeader, CardTitle, CardContent, Input } from '@shadcn-uikit/ui';
+import { Button, Card, CardHeader, CardTitle, CardContent, Input } from '@acronis-platform/shadcn-uikit';
 
 function MyComponent() {
   return (

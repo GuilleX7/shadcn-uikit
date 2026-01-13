@@ -20,9 +20,10 @@
 name: UI - Publish to NPM
 
 on:
-  release:
+  workflow_run:
+    workflows: [ "UI - Release" ]
     types:
-      - published
+      - completed
 
   workflow_dispatch:
 

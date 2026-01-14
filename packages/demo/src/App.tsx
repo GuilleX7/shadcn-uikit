@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import { Layout } from '@/components/Layout.tsx'
+import { Layout } from '@/layouts/Layout.tsx'
 import { Home } from '@/pages/Home.tsx'
 import { ButtonDemo } from '@/components/ButtonDemo.tsx'
 import { AlertDemo } from '@/components/AlertDemo.tsx'

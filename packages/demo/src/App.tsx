@@ -55,13 +55,12 @@ import { InputDemoWithSecondaryMenu } from '@/components/InputDemoWithSecondaryM
 import { SecondaryMenuDemo } from '@/components/SecondaryMenuDemo.tsx'
 import { PlaygroundPage } from '@/pages/playground/PlaygroundPage.tsx'
 import '@/App.css'
-import { ThemeProvider } from '@acronis-platform/shadcn-uikit/react'
 import { DemoApp } from '@/app/App'
 import { Toaster } from 'sonner'
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+    <>
       <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Toaster position="top-right" />
         <Routes>
@@ -127,7 +126,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-    </ThemeProvider>
+    </>
   )
 }
 

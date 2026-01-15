@@ -44,6 +44,22 @@ const applyThemeToDocument = (mode: ThemeMode) => {
   }
 }
 
+// Apply theme immediately on load from localStorage before store initialization
+if (typeof window !== 'undefined') {
+  try {
+    const stored = localStorage.getItem('playground-storage')
+    if (stored) {
+      const parsed = JSON.parse(stored)
+      const themeMode = parsed.state?.theme?.mode
+      if (themeMode) {
+        applyThemeToDocument(themeMode)
+      }
+    }
+  } catch {
+    // Ignore errors, will use default theme
+  }
+}
+
 export const usePlaygroundStore = create<PlaygroundStore>()(
   persist(
     (set, get) => ({
@@ -205,16 +221,18 @@ export const usePlaygroundStore = create<PlaygroundStore>()(
         customTokenSet: state.customTokenSet,
         preferences: state.preferences,
       }),
+      onRehydrateStorage: () => (state) => {
+        // Apply theme after store has been hydrated from localStorage (backup)
+        if (state) {
+          applyThemeToDocument(state.theme.mode)
+        }
+      },
     }
   )
 )
 
-// Initialize theme on load
+// Listen for system theme changes
 if (typeof window !== 'undefined') {
-  const state = usePlaygroundStore.getState()
-  applyThemeToDocument(state.theme.mode)
-
-  // Listen for system theme changes
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
     const currentMode = usePlaygroundStore.getState().theme.mode
     if (currentMode === ThemeMode.SYSTEM) {

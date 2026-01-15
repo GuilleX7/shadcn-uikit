@@ -1,3 +1,11 @@
+## [0.6.0](https://github.com/acronis/shadcn-uikit/compare/v0.5.0...v0.6.0) (2026-01-15)
+
+
+### Features
+
+* add theme build configuration with separate CSS files for tree-shakeable imports ([f16cc84](https://github.com/acronis/shadcn-uikit/commit/f16cc847a148e13d7486c6514ed2dcbd0a14f355))
+* add TREE_SHAKING.md for tree-shaking and performance optimization details ([54b215e](https://github.com/acronis/shadcn-uikit/commit/54b215e2f6f6e40b482144bfdadd00cf3b135a47))
+
 ## [0.5.0](https://github.com/acronis/shadcn-uikit/compare/v0.4.0...v0.5.0) (2026-01-15)
 
 

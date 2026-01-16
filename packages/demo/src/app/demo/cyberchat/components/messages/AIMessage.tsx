@@ -1,6 +1,5 @@
 import { Badge } from '@acronis-platform/shadcn-uikit/react'
 import type { Message, TableData } from '../../types'
-import { MessageAvatar } from './MessageAvatar'
 import { MessageActions } from './MessageActions'
 import { DataTable } from '../DataTable'
 import { formatMessageTime } from '../../utils/dateUtils'
@@ -13,9 +12,7 @@ export function AIMessage({ message }: AIMessageProps) {
   const isTableData = typeof message.content === 'object' && 'headers' in message.content
 
   return (
-    <div className="flex gap-3 animate-in fade-in slide-in-from-bottom-4 duration-300">
-      <MessageAvatar type="ai" />
-      <div className="flex-1 space-y-3">
+    <div className="animate-in fade-in slide-in-from-bottom-4 duration-300 space-y-3">
         {/* Text content */}
         {typeof message.content === 'string' && (
           <div className="text-sm whitespace-pre-wrap">
@@ -66,7 +63,6 @@ export function AIMessage({ message }: AIMessageProps) {
         {message.actions && message.actions.length > 0 && (
           <MessageActions messageId={message.id} actions={message.actions} />
         )}
-      </div>
     </div>
   )
 }

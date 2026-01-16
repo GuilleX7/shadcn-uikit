@@ -68,7 +68,7 @@ export function CyberChatSidebar() {
       {/* Projects Section */}
       <div className="border-b border-border/50">
         <div className="flex items-center justify-between px-4 py-3">
-          <h3 className="text-sm font-semibold">Projects</h3>
+          <h3 className="text-sm font-semibold text-foreground">Projects</h3>
           <Button
             variant="default"
             size="icon"
@@ -96,7 +96,7 @@ export function CyberChatSidebar() {
       {/* Skills Section */}
       <div className="border-b border-border/50">
         <div className="flex items-center justify-between px-4 py-3">
-          <h3 className="text-sm font-semibold">Skills</h3>
+          <h3 className="text-sm font-semibold text-foreground">Skills</h3>
           <Button
             variant="default"
             size="icon"
@@ -124,7 +124,7 @@ export function CyberChatSidebar() {
       {/* Recent Chats */}
       <div className="flex-1 overflow-hidden flex flex-col">
         <div className="flex items-center justify-between px-4 py-3 border-b border-border/50">
-          <h3 className="text-sm font-semibold">Recent chats</h3>
+          <h3 className="text-sm font-semibold text-foreground">Recent chats</h3>
           <Button
             variant="default"
             size="icon"

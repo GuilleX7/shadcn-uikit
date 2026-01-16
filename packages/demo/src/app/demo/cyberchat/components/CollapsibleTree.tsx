@@ -32,8 +32,7 @@ export function CollapsibleTree({
               className={`
                 w-full text-left px-3 py-2 rounded-md text-sm transition-colors
                 flex items-center gap-2
-                ${level > 0 ? 'ml-4' : ''}
-                ${isExpanded && !hasSearchQuery ? 'text-foreground' : 'text-muted-foreground'}
+                ${level > 0 ? 'ml-4 text-foreground/60' : 'text-foreground'}
                 hover:bg-accent/50
               `}
             >

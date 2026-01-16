@@ -1,3 +1,15 @@
+## [0.8.0](https://github.com/acronis/shadcn-uikit/compare/v0.7.0...v0.8.0) (2026-01-16)
+
+
+### Features
+
+* integrate ThemeSwitcher and TokenSelector in ChatHeader ([8fb5e33](https://github.com/acronis/shadcn-uikit/commit/8fb5e33268098db172eb96bf4a7616b0be35a3e0))
+
+
+### Bug Fixes
+
+* update button outline color and adjust border colors for better design consistency ([7636a48](https://github.com/acronis/shadcn-uikit/commit/7636a48e554373cf94d0f541c3759baafeb8e22b))
+
 ## [0.7.0](https://github.com/acronis/shadcn-uikit/compare/v0.6.0...v0.7.0) (2026-01-15)
 
 
@@ -32,11 +44,4 @@
 ### Features
 
 * refine build process and update package.json for improved dependency management ([4252719](https://github.com/acronis/shadcn-uikit/commit/4252719941c9047ae22cd4bbaad7fb228e767366))
-
-## [0.3.0](https://github.com/acronis/shadcn-uikit/compare/v0.2.0...v0.3.0) (2026-01-13)
-
-
-### Features
-
-* add Storybook configuration and visual testing setup for improved component development ([0df68c0](https://github.com/acronis/shadcn-uikit/commit/0df68c0ae5b3da3aa756a441017b6912c752db0c))
 

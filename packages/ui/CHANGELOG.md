@@ -1,3 +1,10 @@
+## [0.10.0](https://github.com/acronis/shadcn-uikit/compare/v0.9.2...v0.10.0) (2026-01-19)
+
+
+### Features
+
+* reorganize exports in react.ts for improved component structure ([26653ee](https://github.com/acronis/shadcn-uikit/commit/26653ee7fa82af718fc319181e9f11568b5484bd))
+
 ## [0.9.2](https://github.com/acronis/shadcn-uikit/compare/v0.9.1...v0.9.2) (2026-01-16)
 
 
@@ -36,11 +43,4 @@
 ### Bug Fixes
 
 * update button outline color and adjust border colors for better design consistency ([7636a48](https://github.com/acronis/shadcn-uikit/commit/7636a48e554373cf94d0f541c3759baafeb8e22b))
-
-## [0.7.0](https://github.com/acronis/shadcn-uikit/compare/v0.6.0...v0.7.0) (2026-01-15)
-
-
-### Features
-
-* add Cyber Chat theme with high contrast colors for chat applications ([0a205f1](https://github.com/acronis/shadcn-uikit/commit/0a205f1b0c19027490c5c41516c60e45aa1d6237))
 

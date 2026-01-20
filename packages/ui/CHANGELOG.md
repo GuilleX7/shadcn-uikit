@@ -1,3 +1,10 @@
+## [0.12.0](https://github.com/acronis/shadcn-uikit/compare/v0.11.0...v0.12.0) (2026-01-20)
+
+
+### Features
+
+* add typography settings initialization and default values in PlaygroundPage ([24c090c](https://github.com/acronis/shadcn-uikit/commit/24c090c6da41db8eda99402814655d2673b5c142))
+
 ## [0.11.0](https://github.com/acronis/shadcn-uikit/compare/v0.10.0...v0.11.0) (2026-01-20)
 
 
@@ -32,16 +39,4 @@
 
 * refine styling variables for improved design consistency and dynamic theming ([f251e2d](https://github.com/acronis/shadcn-uikit/commit/f251e2d7290a6a6d52cc09fe4254fbeb26ee736b))
 * update table and styling variables for improved design consistency ([e2dea97](https://github.com/acronis/shadcn-uikit/commit/e2dea9719943a08c96b3663f17812eaf9c9a7400))
-
-## [0.9.0](https://github.com/acronis/shadcn-uikit/compare/v0.8.0...v0.9.0) (2026-01-16)
-
-
-### Features
-
-* enhance styling for MessageAvatar and CyberChatPage components ([6d82432](https://github.com/acronis/shadcn-uikit/commit/6d82432ff66e2837172f79a00d95b609ed195ed6))
-
-
-### Bug Fixes
-
-* update table component styles for improved design consistency ([439fdc2](https://github.com/acronis/shadcn-uikit/commit/439fdc2d63034fba231948a91b3d2c77d2acb5d0))
 

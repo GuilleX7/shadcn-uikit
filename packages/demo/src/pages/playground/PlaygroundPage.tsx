@@ -10,7 +10,8 @@ import { TokenEditor } from '@/components/playground/TokenEditor.tsx'
 import { TypographyEditor } from '@/components/playground/TypographyEditor.tsx'
 import { ComponentShowcase } from '@/components/playground/ComponentShowcase.tsx'
 import { Button, Tabs, TabsContent, TabsList, TabsTrigger, ResizablePanelGroup, ResizablePanel, ResizableHandle } from '@acronis-platform/shadcn-uikit/react'
-import { ChatComponentsShowcase } from '@/components/playground/ChatComponentsShowcase.tsx';
+import { ChatComponentsShowcase } from '@/components/playground/ChatComponentsShowcase.tsx'
+import { ChartsShowcase } from '@/components/playground/ChartsShowcase.tsx';
 import { AppLayout } from '@/app/layout/AppLayout.tsx';
 import { LocaleProvider } from '@/app/context/LocaleContext';
 import { AuthProvider } from '@/app/context/AuthContext';
@@ -156,8 +157,8 @@ const PlaygroundPage: React.FC = () => {
                       <TabsTrigger value="showcase3">
                         Demo
                       </TabsTrigger>
-                      <TabsTrigger value="showcase4" disabled>
-                        Showcase 4
+                      <TabsTrigger value="showcase4">
+                        Charts
                       </TabsTrigger>
                       <TabsTrigger value="showcase5" disabled>
                         Showcase 5
@@ -183,9 +184,7 @@ const PlaygroundPage: React.FC = () => {
                       </LocaleProvider>
                     </TabsContent>
                     <TabsContent value="showcase4" className="mt-0">
-                      <div className="text-center text-muted-foreground py-8">
-                        Showcase 4 - Coming soon
-                      </div>
+                      <ChartsShowcase />
                     </TabsContent>
                     <TabsContent value="showcase5" className="mt-0">
                       <div className="text-center text-muted-foreground py-8">

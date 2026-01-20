@@ -42,7 +42,7 @@ export const ChatComponentsShowcase: React.FC = () => {
   return (
     <div className="space-y-8">
       <section className="space-y-4">
-        <h2 className="text-2xl font-bold">CyberChat Components Showcase</h2>
+        <h3 className="text-2xl font-bold my-2">CyberChat Components Showcase</h3>
         <p className="text-sm text-muted-foreground">
           All components used in the CyberChat application, demonstrating the
           cyber-chat theme.

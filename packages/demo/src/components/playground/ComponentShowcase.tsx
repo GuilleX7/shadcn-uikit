@@ -19,6 +19,20 @@ export const ComponentShowcase: React.FC = () => {
   return (
     <div className="space-y-8">
       <section className="space-y-4">
+        <h3 className="text-2xl font-bold my-2">Components Showcase</h3>
+        <p className="text-sm text-muted-foreground">
+          Explore a collection of reusable UI components, form elements, and
+          design patterns built with shadcn/ui and Tailwind CSS.
+        </p>
+        <p className="text-sm text-muted-foreground">
+          This showcase demonstrates available variants, states, and real-world
+          usage.
+        </p>
+      </section>
+
+      <Separator />
+
+      <section className="space-y-4">
         <h3 className="text-lg font-semibold">Buttons</h3>
         <div className="flex flex-wrap gap-3">
           <Button variant="default">Primary</Button>
@@ -41,7 +55,8 @@ export const ComponentShowcase: React.FC = () => {
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                This is a sample card component showing how your theme affects card styling.
+                This is a sample card component showing how your theme affects
+                card styling.
               </p>
             </CardContent>
           </Card>
@@ -72,7 +87,9 @@ export const ComponentShowcase: React.FC = () => {
               <InfrastructureIcon />
             </AlertIcon>
             <AlertContent>
-              <AlertDescription>This is an informational alert message.</AlertDescription>
+              <AlertDescription>
+                This is an informational alert message.
+              </AlertDescription>
             </AlertContent>
           </Alert>
 
@@ -81,7 +98,9 @@ export const ComponentShowcase: React.FC = () => {
               <SuccessIcon />
             </AlertIcon>
             <AlertContent>
-              <AlertDescription>Operation completed successfully!</AlertDescription>
+              <AlertDescription>
+                Operation completed successfully!
+              </AlertDescription>
             </AlertContent>
           </Alert>
 
@@ -90,7 +109,9 @@ export const ComponentShowcase: React.FC = () => {
               <WarningIcon />
             </AlertIcon>
             <AlertContent>
-              <AlertDescription>Please review this warning before proceeding.</AlertDescription>
+              <AlertDescription>
+                Please review this warning before proceeding.
+              </AlertDescription>
             </AlertContent>
           </Alert>
 
@@ -110,7 +131,9 @@ export const ComponentShowcase: React.FC = () => {
               <DangerIcon />
             </AlertIcon>
             <AlertContent>
-              <AlertDescription>Danger! This action cannot be undone.</AlertDescription>
+              <AlertDescription>
+                Danger! This action cannot be undone.
+              </AlertDescription>
             </AlertContent>
           </Alert>
 
@@ -202,12 +225,14 @@ export const ComponentShowcase: React.FC = () => {
               <Badge variant="secondary">Secondary</Badge>
               <Badge variant="outline">Outline</Badge>
               <Badge variant="destructive">Destructive</Badge>
-              <Badge className="bg-primary text-primary-foreground">Primary</Badge>
+              <Badge className="bg-primary text-primary-foreground">
+                Primary
+              </Badge>
               <Badge className="bg-accent text-accent-foreground">Accent</Badge>
             </div>
           </CardContent>
         </Card>
       </section>
     </div>
-  )
+  );
 }

@@ -8,7 +8,7 @@ import { ThemeSwitcher } from '@/components/playground/ThemeSwitcher.tsx'
 import { TokenSelector } from '@/components/playground/TokenSelector.tsx'
 import { TokenEditor } from '@/components/playground/TokenEditor.tsx'
 import { ComponentShowcase } from '@/components/playground/ComponentShowcase.tsx'
-import { Button, Tabs, TabsContent, TabsList, TabsTrigger } from '@acronis-platform/shadcn-uikit/react'
+import { Button, Tabs, TabsContent, TabsList, TabsTrigger, ResizablePanelGroup, ResizablePanel, ResizableHandle } from '@acronis-platform/shadcn-uikit/react'
 import { ChatComponentsShowcase } from '@/components/playground/ChatComponentsShowcase.tsx';
 
 const PlaygroundPage: React.FC = () => {
@@ -57,82 +57,88 @@ const PlaygroundPage: React.FC = () => {
       </header>
 
       <main className="flex-1 w-full overflow-hidden">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 h-full">
-          <section className="border-r border-border bg-background p-6 overflow-y-auto">
-            <div className="max-w-3xl mx-auto space-y-6">
-              <div>
-                <h2 className="text-2xl font-semibold mb-2">Token Editor</h2>
-                <p className="text-sm text-muted-foreground">
-                  Customize colors, radius, and other design tokens. Changes
-                  apply in real-time.
-                </p>
+        <ResizablePanelGroup direction="horizontal" className="h-full">
+          <ResizablePanel id="token-editor" defaultSize={40} minSize={20} collapsible={false}>
+            <section className="bg-background p-6 overflow-y-auto h-full">
+              <div className="max-w-3xl mx-auto space-y-6">
+                <div>
+                  <h2 className="text-2xl font-semibold mb-2">Token Editor</h2>
+                  <p className="text-sm text-muted-foreground">
+                    Customize colors, radius, and other design tokens. Changes
+                    apply in real-time.
+                  </p>
+                </div>
+
+                <TokenEditor />
               </div>
+            </section>
+          </ResizablePanel>
 
-              <TokenEditor />
-            </div>
-          </section>
+          <ResizableHandle withHandle />
 
-          <section className="bg-muted/30 flex flex-col h-full overflow-y-auto">
-            <Tabs
-              value={activeTab}
-              onValueChange={setActiveTab}
-              className="flex flex-col h-full"
-            >
-              <div className="flex-shrink-0 p-6 pb-4 border-b border-border">
-                <div className="max-w-4xl mx-auto space-y-6">
-                  <div>
-                    <h2 className="text-2xl font-semibold mb-2">
-                      Component Preview
-                    </h2>
-                    <p className="text-sm text-muted-foreground">
-                      See how your tokens affect all components in real-time
-                    </p>
+          <ResizablePanel id="component-preview" defaultSize={60} minSize={30} collapsible={false}>
+            <section className="bg-muted/30 flex flex-col h-full overflow-y-auto">
+              <Tabs
+                value={activeTab}
+                onValueChange={setActiveTab}
+                className="flex flex-col h-full"
+              >
+                <div className="flex-shrink-0 p-6 pb-4 border-b border-border">
+                  <div className="max-w-4xl mx-auto space-y-6">
+                    <div>
+                      <h2 className="text-2xl font-semibold mb-2">
+                        Component Preview
+                      </h2>
+                      <p className="text-sm text-muted-foreground">
+                        See how your tokens affect all components in real-time
+                      </p>
+                    </div>
+
+                    <TabsList className="grid w-full grid-cols-5">
+                      <TabsTrigger value="components">Components</TabsTrigger>
+                      <TabsTrigger value="chat">Chat</TabsTrigger>
+                      <TabsTrigger value="showcase3" disabled>
+                        Showcase 3
+                      </TabsTrigger>
+                      <TabsTrigger value="showcase4" disabled>
+                        Showcase 4
+                      </TabsTrigger>
+                      <TabsTrigger value="showcase5" disabled>
+                        Showcase 5
+                      </TabsTrigger>
+                    </TabsList>
                   </div>
-
-                  <TabsList className="grid w-full grid-cols-5">
-                    <TabsTrigger value="components">Components</TabsTrigger>
-                    <TabsTrigger value="chat">Chat</TabsTrigger>
-                    <TabsTrigger value="showcase3" disabled>
-                      Showcase 3
-                    </TabsTrigger>
-                    <TabsTrigger value="showcase4" disabled>
-                      Showcase 4
-                    </TabsTrigger>
-                    <TabsTrigger value="showcase5" disabled>
-                      Showcase 5
-                    </TabsTrigger>
-                  </TabsList>
                 </div>
-              </div>
 
-              <div className="flex-1 overflow-y-auto px-6 pb-6">
-                <div className="max-w-4xl mx-auto">
-                  <TabsContent value="components" className="mt-0">
-                    <ComponentShowcase />
-                  </TabsContent>
-                  <TabsContent value="chat" className="mt-0">
-                    <ChatComponentsShowcase />
-                  </TabsContent>
-                  <TabsContent value="showcase3" className="mt-0">
-                    <div className="text-center text-muted-foreground py-8">
-                      Showcase 3 - Coming soon
-                    </div>
-                  </TabsContent>
-                  <TabsContent value="showcase4" className="mt-0">
-                    <div className="text-center text-muted-foreground py-8">
-                      Showcase 4 - Coming soon
-                    </div>
-                  </TabsContent>
-                  <TabsContent value="showcase5" className="mt-0">
-                    <div className="text-center text-muted-foreground py-8">
-                      Showcase 5 - Coming soon
-                    </div>
-                  </TabsContent>
+                <div className="flex-1 overflow-y-auto px-6 pb-6">
+                  <div className="max-w-4xl mx-auto">
+                    <TabsContent value="components" className="mt-0">
+                      <ComponentShowcase />
+                    </TabsContent>
+                    <TabsContent value="chat" className="mt-0">
+                      <ChatComponentsShowcase />
+                    </TabsContent>
+                    <TabsContent value="showcase3" className="mt-0">
+                      <div className="text-center text-muted-foreground py-8">
+                        Showcase 3 - Coming soon
+                      </div>
+                    </TabsContent>
+                    <TabsContent value="showcase4" className="mt-0">
+                      <div className="text-center text-muted-foreground py-8">
+                        Showcase 4 - Coming soon
+                      </div>
+                    </TabsContent>
+                    <TabsContent value="showcase5" className="mt-0">
+                      <div className="text-center text-muted-foreground py-8">
+                        Showcase 5 - Coming soon
+                      </div>
+                    </TabsContent>
+                  </div>
                 </div>
-              </div>
-            </Tabs>
-          </section>
-        </div>
+              </Tabs>
+            </section>
+          </ResizablePanel>
+        </ResizablePanelGroup>
       </main>
     </div>
   );

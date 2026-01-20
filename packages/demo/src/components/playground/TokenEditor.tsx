@@ -57,7 +57,7 @@ export const TokenEditor: React.FC = () => {
         <div>
           <h3 className="text-lg font-semibold">Color Tokens</h3>
           <p className="text-sm text-muted-foreground">
-            {isCustom ? 'Editing custom theme' : `Viewing ${activeTokenSet?.name || 'theme'}`}
+            {isCustom ? 'Editing custom theme' : `Viewing ${activeTokenSet?.name || 'theme'} theme`}
           </p>
         </div>
         {isCustom && (

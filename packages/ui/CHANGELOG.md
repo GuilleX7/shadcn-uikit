@@ -1,3 +1,10 @@
+## [0.12.1](https://github.com/acronis/shadcn-uikit/compare/v0.12.0...v0.12.1) (2026-01-21)
+
+
+### Bug Fixes
+
+* update react-resizable-panels version to ^4.1.1 in package.json and pnpm-lock.yaml ([0b2bd43](https://github.com/acronis/shadcn-uikit/commit/0b2bd43c99a485afe059da7a85e7f269d85ce7ba))
+
 ## [0.12.0](https://github.com/acronis/shadcn-uikit/compare/v0.11.0...v0.12.0) (2026-01-20)
 
 
@@ -31,12 +38,4 @@
 ### Bug Fixes
 
 * update muted color token for improved design consistency and dynamic theming ([d1cb2de](https://github.com/acronis/shadcn-uikit/commit/d1cb2dee7a285bf89e2f9acbac71b276e626b4de))
-
-## [0.9.1](https://github.com/acronis/shadcn-uikit/compare/v0.9.0...v0.9.1) (2026-01-16)
-
-
-### Bug Fixes
-
-* refine styling variables for improved design consistency and dynamic theming ([f251e2d](https://github.com/acronis/shadcn-uikit/commit/f251e2d7290a6a6d52cc09fe4254fbeb26ee736b))
-* update table and styling variables for improved design consistency ([e2dea97](https://github.com/acronis/shadcn-uikit/commit/e2dea9719943a08c96b3663f17812eaf9c9a7400))
 

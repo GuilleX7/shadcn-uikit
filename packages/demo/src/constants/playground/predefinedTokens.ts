@@ -1,4 +1,15 @@
-import { TokenSet, ColorToken } from '@/types/playground'
+import { TokenSet, ColorToken, TypographyConfig } from '@/types/playground'
+
+/**
+ * Default typography configuration
+ */
+const DEFAULT_TYPOGRAPHY: TypographyConfig = {
+  fontFamily: 'system-ui',
+  fontFamilyStack: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+  fontSize: '16px',
+  lineHeight: '1.5',
+  letterSpacing: '0',
+}
 
 /**
  * Helper to create a color token from HSL values
@@ -129,6 +140,7 @@ export const DEFAULT_TOKEN_SET: TokenSet = {
     '2xl': '1rem',
     full: '9999px',
   },
+  typography: DEFAULT_TYPOGRAPHY,
 }
 
 /**
@@ -194,6 +206,7 @@ export const CYBER_CHAT_TOKEN_SET: TokenSet = {
     '2xl': '1rem',
     full: '9999px',
   },
+  typography: DEFAULT_TYPOGRAPHY,
 };
 
 /**
@@ -253,6 +266,7 @@ export const OCEAN_TOKEN_SET: TokenSet = {
     '2xl': '1rem',
     full: '9999px',
   },
+  typography: DEFAULT_TYPOGRAPHY,
 }
 
 /**
@@ -312,6 +326,7 @@ export const FOREST_TOKEN_SET: TokenSet = {
     '2xl': '1rem',
     full: '9999px',
   },
+  typography: DEFAULT_TYPOGRAPHY,
 }
 
 /**
@@ -371,6 +386,7 @@ export const SUNSET_TOKEN_SET: TokenSet = {
     '2xl': '1rem',
     full: '9999px',
   },
+  typography: DEFAULT_TYPOGRAPHY,
 }
 
 /**
@@ -430,6 +446,7 @@ export const LAVENDER_TOKEN_SET: TokenSet = {
     '2xl': '1rem',
     full: '9999px',
   },
+  typography: DEFAULT_TYPOGRAPHY,
 }
 
 /**
@@ -489,6 +506,7 @@ export const MONOCHROME_TOKEN_SET: TokenSet = {
     '2xl': '1rem',
     full: '9999px',
   },
+  typography: DEFAULT_TYPOGRAPHY,
 }
 
 /**
@@ -548,6 +566,7 @@ export const ACRONIS_TOKEN_SET: TokenSet = {
     '2xl': '1rem',
     full: '9999px',
   },
+  typography: DEFAULT_TYPOGRAPHY,
 }
 
 /**

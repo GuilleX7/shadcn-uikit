@@ -24,5 +24,6 @@ body,
 }
 
 body {
-  @apply bg-background text-foreground;
+  @apply bg-background text-foreground font-sans text-base;
+  letter-spacing: var(--av-letter-spacing-base, 0);
 }

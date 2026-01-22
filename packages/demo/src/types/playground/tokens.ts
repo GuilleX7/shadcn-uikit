@@ -60,6 +60,17 @@ export interface RadiusConfig {
 }
 
 /**
+ * Typography configuration
+ */
+export interface TypographyConfig {
+  fontFamily: string
+  fontFamilyStack: string
+  fontSize: string
+  lineHeight: string
+  letterSpacing: string
+}
+
+/**
  * Complete token set with light/dark palettes and radius
  */
 export interface TokenSet {
@@ -69,6 +80,7 @@ export interface TokenSet {
   light: ColorPalette
   dark: ColorPalette
   radius: RadiusConfig
+  typography: TypographyConfig
 }
 
 /**

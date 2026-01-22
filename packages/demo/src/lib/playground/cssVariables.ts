@@ -16,6 +16,9 @@ export function applyTokenSet(tokenSet: TokenSet, theme: ThemeMode): void {
 
   // Apply radius variables
   applyRadiusVariables(root, tokenSet.radius)
+
+  // Apply typography variables
+  applyTypographySettings(tokenSet.typography)
 }
 
 /**
@@ -94,7 +97,7 @@ export function removeTypographySettings(): void {
     '--av-line-height-base',
     '--av-letter-spacing-base',
   ]
-  
+
   variablesToRemove.forEach((variable) => {
     root.style.removeProperty(variable)
   })

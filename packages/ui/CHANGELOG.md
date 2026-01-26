@@ -1,3 +1,10 @@
+## [0.14.0](https://github.com/acronis/shadcn-uikit/compare/v0.13.0...v0.14.0) (2026-01-26)
+
+
+### Features
+
+* add typography configuration with base font settings and update import structure ([7d7795b](https://github.com/acronis/shadcn-uikit/commit/7d7795bdf8a9a575697849aca5573aad6d06b398))
+
 ## [0.13.0](https://github.com/acronis/shadcn-uikit/compare/v0.12.1...v0.13.0) (2026-01-26)
 
 
@@ -31,11 +38,4 @@
 ### Bug Fixes
 
 * update tailwind configuration for consistency in color and screen settings ([c044e94](https://github.com/acronis/shadcn-uikit/commit/c044e94e7ffdd1e3ed7d3daa76a9c883867bc837))
-
-## [0.10.0](https://github.com/acronis/shadcn-uikit/compare/v0.9.2...v0.10.0) (2026-01-19)
-
-
-### Features
-
-* reorganize exports in react.ts for improved component structure ([26653ee](https://github.com/acronis/shadcn-uikit/commit/26653ee7fa82af718fc319181e9f11568b5484bd))
 

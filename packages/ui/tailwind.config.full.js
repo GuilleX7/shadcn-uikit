@@ -2,7 +2,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ['class'],
-  content: [],
+  // Scan reference file that contains many utility classes to force generation
+  content: ['./src/styles/tailwind-reference.html'],
   theme: {
   	container: {
   		center: true,

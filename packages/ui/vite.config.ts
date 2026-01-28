@@ -30,7 +30,6 @@ export default defineConfig({
         react: resolve(__dirname, 'src/react.ts'),
         styles: resolve(__dirname, 'src/styles/index.scss'),
         'styles-tokens': resolve(__dirname, 'src/styles/tokens-only.scss'),
-        'styles-full': resolve(__dirname, 'src/styles/full.scss'),
         'styles-base': resolve(__dirname, 'src/styles/base-only.scss'),
         'styles-components': resolve(__dirname, 'src/styles/components-only.scss'),
         'styles-utilities': resolve(__dirname, 'src/styles/utilities-only.scss'),
@@ -76,9 +75,6 @@ export default defineConfig({
         assetFileNames: (assetInfo) => {
           // Tokens CSS
           if (assetInfo.name === 'styles-tokens.css') return 'tokens.css';
-
-          // Full unpurged build
-          if (assetInfo.name === 'styles-full.css') return 'shadcn-uikit-full.css';
 
           // Modular builds
           if (assetInfo.name === 'styles-base.css') return 'base.css';

@@ -25,21 +25,17 @@
     "./styles/themes/acronis-default": "./dist/themes/acronis-default.css",
     "./styles/themes/acronis-ocean": "./dist/themes/acronis-ocean.css",
     "./styles/themes/cyber-chat": "./dist/themes/cyber-chat.css",
-    "./tailwind-preset": {
-      "require": "./tailwind.preset.cjs",
-      "import": "./dist/tailwind-preset.js"
-    },
+    "./tailwind-preset": "./tailwind.preset.js",
     "./components/*": "./dist/components/*"
   },
   "files": [
     "dist",
     "README.md",
     "LICENSE",
-    "tailwind.preset.cjs"
+    "tailwind.preset.js"
   ],
   "scripts": {
-    "build": "pnpm run build:lib && pnpm run build:full-css && pnpm run build:llms && pnpm run build:preset",
-    "build:preset": "tsx scripts/generate-preset.ts",
+    "build": "pnpm run build:lib && pnpm run build:full-css && pnpm run build:llms",
     "build:full-css": "tsx scripts/build-full-css.ts",
     "build:lib": "vite build",
     "build:types": "tsc --project tsconfig.build.json",

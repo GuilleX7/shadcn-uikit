@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react'
 import { Button } from '@acronis-platform/shadcn-uikit/react'
-import { FileSearch, Brain, Send } from 'lucide-react'
+import { FileSearch, Brain } from 'lucide-react'
 import { useChatFlowStore } from '../store/useChatFlowStore'
 
 export function LandingState() {
@@ -56,9 +56,9 @@ export function LandingState() {
           </h1>
         </div>
 
-        {/* Input box - centered */}
+        {/* Input box with buttons inside - centered */}
         <div
-          className={`relative border rounded-3xl bg-white px-4 py-3 transition-colors ${
+          className={`relative border rounded-3xl bg-white px-5 py-4 transition-colors ${
             inputValue ? 'border-[#0D7DE5]' : 'border-gray-200'
           }`}
         >
@@ -67,42 +67,52 @@ export function LandingState() {
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Show me what you can"
-            className="w-full min-h-[40px] max-h-[200px] resize-none bg-transparent text-sm focus:outline-none placeholder:text-muted-foreground"
+            placeholder="Ask anything"
+            className="w-full min-h-[80px] max-h-[200px] resize-none bg-transparent text-base focus:outline-none placeholder:text-muted-foreground mb-4"
             rows={1}
           />
-        </div>
 
-        {/* Filter buttons and model selector */}
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Button
-              variant="outline"
-              size="sm"
-              className="h-8 gap-1.5 rounded-lg text-xs border-gray-200 bg-white"
-            >
-              <FileSearch className="h-3.5 w-3.5" />
-              <span>Use files</span>
-            </Button>
-            <Button
-              variant="outline"
-              size="sm"
-              className="h-8 gap-1.5 rounded-lg text-xs border-gray-200 bg-white"
-            >
-              <Brain className="h-3.5 w-3.5" />
-              <span>Show reports</span>
-            </Button>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-xs text-muted-foreground">{selectedModel}</span>
-            <Button
-              size="icon"
-              className="h-8 w-8 rounded-lg bg-[#0D7DE5] hover:bg-[#0B6FD1]"
-              onClick={handleSend}
-              disabled={!inputValue.trim()}
-            >
-              <Send className="h-3.5 w-3.5" />
-            </Button>
+          {/* Buttons inside textarea */}
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Button
+                variant="outline"
+                size="sm"
+                className="h-9 gap-2 rounded-xl text-sm border-gray-200 bg-white hover:bg-gray-50"
+              >
+                <FileSearch className="h-4 w-4" />
+                <span>Add files</span>
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                className="h-9 gap-2 rounded-xl text-sm border-gray-200 bg-white hover:bg-gray-50"
+              >
+                <Brain className="h-4 w-4" />
+                <span>Web search</span>
+              </Button>
+            </div>
+            <div className="flex items-center gap-2">
+              <Button
+                variant="outline"
+                className="h-9 gap-2 rounded-xl text-sm border-gray-200 bg-white hover:bg-gray-50"
+              >
+                <span>{selectedModel}</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </Button>
+              <Button
+                size="icon"
+                className="h-9 w-9 rounded-xl bg-[#0D7DE5] hover:bg-[#0B6FD1]"
+                onClick={handleSend}
+                disabled={!inputValue.trim()}
+              >
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M8 3L8 13M8 3L5 6M8 3L11 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </Button>
+            </div>
           </div>
         </div>
 

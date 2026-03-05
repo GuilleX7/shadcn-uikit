@@ -1,3 +1,10 @@
+## [0.25.0](https://github.com/acronis/shadcn-uikit/compare/v0.24.0...v0.25.0) (2026-03-05)
+
+
+### Features
+
+* add portal prop to AlertDialog component ([0db9cf1](https://github.com/acronis/shadcn-uikit/commit/0db9cf1ddcde251e12537ee4269b0429e307cee5))
+
 ## [0.24.0](https://github.com/acronis/shadcn-uikit/compare/v0.23.4...v0.24.0) (2026-03-05)
 
 
@@ -25,11 +32,4 @@
 ### Bug Fixes
 
 * **package:** update @radix-ui/react-visually-hidden version to ^1.2.3 ([8fa7580](https://github.com/acronis/shadcn-uikit/commit/8fa75801c3f8ad25619d8dca7c12473d9232de25))
-
-## [0.23.1](https://github.com/acronis/shadcn-uikit/compare/v0.23.0...v0.23.1) (2026-02-25)
-
-
-### Bug Fixes
-
-* **package:** add require field for tailwind preset in package.json ([32f99c6](https://github.com/acronis/shadcn-uikit/commit/32f99c6614d6953d1d297acdc3af129b4970dfd8))
 

@@ -1,3 +1,10 @@
+## [0.24.0](https://github.com/acronis/shadcn-uikit/compare/v0.23.4...v0.24.0) (2026-03-05)
+
+
+### Features
+
+* add portal prop to Sheet component ([e261103](https://github.com/acronis/shadcn-uikit/commit/e2611030a7471994ea075a898196edc929b28101))
+
 ## [0.23.4](https://github.com/acronis/shadcn-uikit/compare/v0.23.3...v0.23.4) (2026-02-26)
 
 
@@ -25,11 +32,4 @@
 ### Bug Fixes
 
 * **package:** add require field for tailwind preset in package.json ([32f99c6](https://github.com/acronis/shadcn-uikit/commit/32f99c6614d6953d1d297acdc3af129b4970dfd8))
-
-## [0.23.0](https://github.com/acronis/shadcn-uikit/compare/v0.22.0...v0.23.0) (2026-02-23)
-
-
-### Features
-
-* **PLTFRM-86108:** add generic components, layout components and pattern demos ([42a150f](https://github.com/acronis/shadcn-uikit/commit/42a150f009485e0acca2443d49eb7d93c307d959))
 
